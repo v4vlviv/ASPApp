@@ -105,5 +105,10 @@ namespace WebApp
         {
             return new ApplicationSignInManager(context.GetUserManager<ApplicationUserManager>(), context.Authentication);
         }
+
+        internal Task SignInAsync(ApplicationUser user, bool isPersistent, bool rememberBrowser)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
